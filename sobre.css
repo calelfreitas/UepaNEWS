@@ -1,0 +1,251 @@
+/*:root {
+    --cor-primaria: rgb(172, 54, 39);
+    --cor-secundaria: rgb(60, 90, 145);
+    --fonte-titulo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-texto: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    --fonte-rodape: "helvetica", sans-serif;
+}*/
+
+/* Estilos gerais */
+body,h2,h3,h4,h5 p, ul, ol, li, form, input, img {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(172, 54, 39);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; /* Altura mínima */
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header h1 img {
+    max-height: 8vh;
+    width: auto;
+}
+header p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+    color: #fff;
+}
+.menu-cliente ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.menu-cliente ul li {
+    margin: 0 15px;
+}
+.menu-cliente ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Container principal */
+.container.paineis {
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+}
+/* Aside (menu) */
+aside {
+    width: 250px;
+    min-width: 250px;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    padding: 20px;
+}
+.menu-principal {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.busca input[type="search"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+}
+.busca input[type="image"] {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.menu-principal ol {
+    margin: 0;
+    padding: 0;
+}
+.menu-principal li {
+    list-style-type: none;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-image: url(img/background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: max-content;
+}
+.menu-principal a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.881);
+    display: block;
+}
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
+}
+h1 p{
+    color:darkred;
+    text-align: center;
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold!important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana;;
+}
+h2 {
+    padding: 10px;
+    /*border-bottom: 2px solid rgb(172, 54, 39);*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 p {
+    text-align: center;
+    font-family:'helvetica', sans-serif;
+}
+h3 {
+    padding: 10px;
+    /*border-bottom: 2px solid rgb(172, 54, 39);*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius:15px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+/* Rodapé */
+/* Rodapé */
+footer {
+    background-color: rgb(60, 90, 145);
+    text-align: center;
+    padding: 8px 10px; /* Padding reduzido */
+    width: 100%;
+    margin-top: auto; /* Mantém o footer no final da página */
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos nas extremidades */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px; /* Reduzi o espaçamento entre os elementos internos */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+}
+
+footer .anexos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin: 2px 0; /* Reduzi a margem vertical */
+}
+
+footer .anexos a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px; /* Reduzi a margem horizontal */
+}
+
+footer .social {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex;
+    gap: 10px; /* Reduzi o espaçamento entre os ícones */
+    padding: 0;
+    margin: 0;
+}
+
+footer .social li {
+    margin: 0;
+}
+
+footer .social li a {
+    display: block;
+    width: 22px; /* Tamanho dos ícones */
+    height: 22px;
+    text-indent: -9999px; /* Esconde o texto dos links */
+    background-size: cover;
+    border-radius: 5px;
+}
+
+footer .social a[href*="facebook.com"] {
+    background-image: url(img/facebook.png);
+}
+
+footer .social a[href*="twitter.com"] {
+    background-image: url(img/twitter.png);
+}
+
+footer .social a[href*="plus.google.com"] {
+    background-image: url(img/googleplus.png);
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    footer {
+        padding: 6px 8px; /* Padding menor em telas pequenas */
+    }
+
+    footer .container {
+        gap: 2px; /* Espaçamento ainda menor entre os elementos */
+    }
+
+    footer .anexos {
+        margin: 1px 0; /* Margem vertical reduzida */
+    }
+
+    footer .social {
+        gap: 8px; /* Espaçamento menor entre os ícones */
+    }
+}
